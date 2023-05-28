@@ -29,7 +29,7 @@ foreach ($result as $row) {
     <div class="container">
         <div class="row">            
             <div class="col-md-12">
-                <h3>Contact Form</h3>
+                <h3>Liên hệ</h3>
                 <div class="row cform">
                     <div class="col-md-8">
                         <div class="well well-sm">
@@ -149,38 +149,38 @@ if(isset($_POST['form_contact']))
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="name">Name</label>
-                                        <input type="text" class="form-control" name="visitor_name" placeholder="Enter name">
+                                        <label for="name">Họ tên</label>
+                                        <input type="text" class="form-control" name="visitor_name" placeholder="Nhập vào họ tên">
                                     </div>
                                     <div class="form-group">
-                                        <label for="email">Email Address</label>
-                                        <input type="email" class="form-control" name="visitor_email" placeholder="Enter email address">
+                                        <label for="email">Email</label>
+                                        <input type="email" class="form-control" name="visitor_email" placeholder="Nhập vào địa chỉ email">
                                     </div>
                                     <div class="form-group">
-                                        <label for="email">Phone Number</label>
-                                        <input type="text" class="form-control" name="visitor_phone" placeholder="Enter phone number">
+                                        <label for="email">Số điện thoại</label>
+                                        <input type="text" class="form-control" name="visitor_phone" placeholder="Nhập vào số điện thoại">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="name">Message</label>
-                                        <textarea name="visitor_message" class="form-control" rows="9" cols="25" placeholder="Enter message"></textarea>
+                                        <label for="name">Lời nhắn</label>
+                                        <textarea name="visitor_message" class="form-control" rows="9" cols="25" placeholder="Nhập vào lời nhắn"></textarea>
                                     </div>
                                 </div>
                                 <div class="col-md-12">
-                                    <input type="submit" value="Send Message" class="btn btn-primary pull-right" name="form_contact">
+                                    <input type="submit" value="Gửi lời nhắn" class="btn btn-primary pull-right" name="form_contact">
                                 </div>
                             </div>
                             </form>
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <legend><span class="glyphicon glyphicon-globe"></span> Our office</legend>
+                        <legend><span class="glyphicon glyphicon-globe"></span> Địa chỉ văn phòng</legend>
                         <address>
                             <?php echo nl2br($contact_address); ?>
                         </address>
                         <address>
-                            <strong>Phone:</strong><br>
+                            <strong>Điện thoại:</strong><br>
                             <span><?php echo $contact_phone; ?></span>
                         </address>
                         <address>
@@ -190,7 +190,7 @@ if(isset($_POST['form_contact']))
                     </div>
                 </div>
 
-                <h3>Find Us On Map</h3>
+                <h3>Vị trí trên bản đồ</h3>
                 <?php echo $contact_map_iframe; ?>
                 
             </div>

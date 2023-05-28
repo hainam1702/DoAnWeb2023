@@ -22,9 +22,11 @@ foreach ($result as $row) {
         <div class="row">            
             <div class="col-md-12">
                 
-                <p>
-                    <?php echo $about_content; ?>
-                </p>
+            <font face="Comic Sans MS">
+                <span style="font-size: 20px;">
+                <?php echo $about_content; ?>
+                    </span>
+            </font>
 
             </div>
         </div>
