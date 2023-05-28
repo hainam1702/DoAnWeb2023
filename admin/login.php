@@ -45,7 +45,7 @@ if(isset($_POST['form1'])) {
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Login</title>
+	<title>Đăng nhập</title>
 
 	<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
 
@@ -66,10 +66,10 @@ if(isset($_POST['form1'])) {
 
 <div class="login-box">
 	<div class="login-logo">
-		<b>Admin Panel</b>
+		<b>Bảng quản trị</b>
 	</div>
   	<div class="login-box-body">
-    	<p class="login-box-msg">Log in to start your session</p>
+    	<p class="login-box-msg">Đăng nhập để bắt đầu phiên của bạn</p>
     
 	    <?php 
 	    if( (isset($error_message)) && ($error_message!='') ):

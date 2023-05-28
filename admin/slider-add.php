@@ -49,10 +49,10 @@ if(isset($_POST['form1'])) {
 
 <section class="content-header">
 	<div class="content-header-left">
-		<h1>Add Slider</h1>
+		<h1>Thêm Slider</h1>
 	</div>
 	<div class="content-header-right">
-		<a href="slider.php" class="btn btn-primary btn-sm">View All</a>
+		<a href="slider.php" class="btn btn-primary btn-sm">Xem tất cả</a>
 	</div>
 </section>
 
@@ -80,49 +80,49 @@ if(isset($_POST['form1'])) {
 				<div class="box box-info">
 					<div class="box-body">
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Photo <span>*</span></label>
+							<label for="" class="col-sm-2 control-label">Ảnh <span>*</span></label>
 							<div class="col-sm-9" style="padding-top:5px">
-								<input type="file" name="photo">(Only jpg, jpeg, gif and png are allowed)
+								<input type="file" name="photo">(Chỉ sử dụng jpg,png)
 							</div>
 						</div>
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Heading </label>
+							<label for="" class="col-sm-2 control-label">Tiêu đề </label>
 							<div class="col-sm-6">
 								<input type="text" autocomplete="off" class="form-control" name="heading" value="<?php if(isset($_POST['heading'])){echo $_POST['heading'];} ?>">
 							</div>
 						</div>
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Content </label>
+							<label for="" class="col-sm-2 control-label">Nội dụng </label>
 							<div class="col-sm-6">
 								<textarea class="form-control" name="content" style="height:140px;"><?php if(isset($_POST['content'])){echo $_POST['content'];} ?></textarea>
 							</div>
 						</div>
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Button Text </label>
+							<label for="" class="col-sm-2 control-label">Nút bấm </label>
 							<div class="col-sm-6">
 								<input type="text" autocomplete="off" class="form-control" name="button_text" value="<?php if(isset($_POST['button_text'])){echo $_POST['button_text'];} ?>">
 							</div>
 						</div>
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Button URL </label>
+							<label for="" class="col-sm-2 control-label">Link </label>
 							<div class="col-sm-6">
 								<input type="text" autocomplete="off" class="form-control" name="button_url" value="<?php if(isset($_POST['button_url'])){echo $_POST['button_url'];} ?>">
 							</div>
 						</div>
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Position </label>
+							<label for="" class="col-sm-2 control-label">Vị trí </label>
 							<div class="col-sm-6">
 								<select name="position" class="form-control">
-									<option value="Left">Left</option>
-									<option value="Center">Center</option>
-									<option value="Right">Right</option>
+									<option value="Left">Trái</option>
+									<option value="Center">Giữa</option>
+									<option value="Right">Phải</option>
 								</select>
 							</div>
 						</div>
 						<div class="form-group">
 							<label for="" class="col-sm-2 control-label"></label>
 							<div class="col-sm-6">
-								<button type="submit" class="btn btn-success pull-left" name="form1">Submit</button>
+								<button type="submit" class="btn btn-success pull-left" name="form1">Thêm</button>
 							</div>
 						</div>
 					</div>

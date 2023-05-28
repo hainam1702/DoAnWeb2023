@@ -32,7 +32,7 @@ if(isset($_POST['form1'])) {
 		<h1>Add FAQ</h1>
 	</div>
 	<div class="content-header-right">
-		<a href="faq.php" class="btn btn-primary btn-sm">View All</a>
+		<a href="faq.php" class="btn btn-primary btn-sm">Xem tất cả</a>
 	</div>
 </section>
 
@@ -60,13 +60,13 @@ if(isset($_POST['form1'])) {
 				<div class="box box-info">
 					<div class="box-body">
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Title <span>*</span></label>
+							<label for="" class="col-sm-2 control-label">Tiêu đề <span>*</span></label>
 							<div class="col-sm-6">
 								<input type="text" autocomplete="off" class="form-control" name="faq_title" value="<?php if(isset($_POST['faq_title'])){echo $_POST['faq_title'];} ?>">
 							</div>
 						</div>
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Content <span>*</span></label>
+							<label for="" class="col-sm-2 control-label">Nội dung <span>*</span></label>
 							<div class="col-sm-9">
 								<textarea class="form-control" name="faq_content" id="editor1" style="height:200px;"><?php if(isset($_POST['faq_content'])){echo $_POST['faq_content'];} ?></textarea>
 							</div>
@@ -74,7 +74,7 @@ if(isset($_POST['form1'])) {
 						<div class="form-group">
 							<label for="" class="col-sm-2 control-label"></label>
 							<div class="col-sm-6">
-								<button type="submit" class="btn btn-success pull-left" name="form1">Submit</button>
+								<button type="submit" class="btn btn-success pull-left" name="form1">Thêm</button>
 							</div>
 						</div>
 					</div>

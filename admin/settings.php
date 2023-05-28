@@ -821,13 +821,13 @@ foreach ($result as $row) {
                             <div class="box box-info">
                                 <div class="box-body">
                                     <div class="form-group">
-                                        <label for="" class="col-sm-2 control-label">Existing Photo</label>
+                                        <label for="" class="col-sm-2 control-label">Ảnh hiện tại</label>
                                         <div class="col-sm-6" style="padding-top:6px;">
                                             <img src="../assets/uploads/<?php echo $logo; ?>" class="existing-photo" style="height:80px;">
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label for="" class="col-sm-2 control-label">New Photo</label>
+                                        <label for="" class="col-sm-2 control-label">Ảnh mới</label>
                                         <div class="col-sm-6" style="padding-top:6px;">
                                             <input type="file" name="photo_logo">
                                         </div>
@@ -835,7 +835,7 @@ foreach ($result as $row) {
                                     <div class="form-group">
                                         <label for="" class="col-sm-2 control-label"></label>
                                         <div class="col-sm-6">
-                                            <button type="submit" class="btn btn-success pull-left" name="form1">Update Logo</button>
+                                            <button type="submit" class="btn btn-success pull-left" name="form1">Cập nhập ảnh logo</button>
                                         </div>
                                     </div>
                                 </div>
@@ -852,13 +852,13 @@ foreach ($result as $row) {
                             <div class="box box-info">
                                 <div class="box-body">
                                     <div class="form-group">
-                                        <label for="" class="col-sm-2 control-label">Existing Photo</label>
+                                        <label for="" class="col-sm-2 control-label">Ảnh hiện tại</label>
                                         <div class="col-sm-6" style="padding-top:6px;">
                                             <img src="../assets/uploads/<?php echo $favicon; ?>" class="existing-photo" style="height:40px;">
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label for="" class="col-sm-2 control-label">New Photo</label>
+                                        <label for="" class="col-sm-2 control-label">Ảnh mới</label>
                                         <div class="col-sm-6" style="padding-top:6px;">
                                             <input type="file" name="photo_favicon">
                                         </div>
@@ -866,7 +866,7 @@ foreach ($result as $row) {
                                     <div class="form-group">
                                         <label for="" class="col-sm-2 control-label"></label>
                                         <div class="col-sm-6">
-                                            <button type="submit" class="btn btn-success pull-left" name="form2">Update Favicon</button>
+                                            <button type="submit" class="btn btn-success pull-left" name="form2">Cập nhập biểu tượng</button>
                                         </div>
                                     </div>
                                 </div>
@@ -880,36 +880,27 @@ foreach ($result as $row) {
                             <form class="form-horizontal" action="" method="post">
                             <div class="box box-info">
                                 <div class="box-body">
-                                    <div class="form-group">
-                                        <label for="" class="col-sm-2 control-label">Newsletter Section </label>
-                                        <div class="col-sm-3">
-                                            <select name="newsletter_on_off" class="form-control" style="width:auto;">
-                                                <option value="1" <?php if($newsletter_on_off == 1) {echo 'selected';} ?>>On</option>
-                                                <option value="0" <?php if($newsletter_on_off == 0) {echo 'selected';} ?>>Off</option>
-                                            </select>
-                                        </div>
-                                    </div>
 
                                     <div class="form-group">
-                                        <label for="" class="col-sm-2 control-label">Footer - Copyright </label>
+                                        <label for="" class="col-sm-2 control-label">Bản quyền </label>
                                         <div class="col-sm-9">
                                             <input class="form-control" type="text" name="footer_copyright" value="<?php echo $footer_copyright; ?>">
                                         </div>
                                     </div>                              
                                     <div class="form-group">
-                                        <label for="" class="col-sm-2 control-label">Contact Address </label>
+                                        <label for="" class="col-sm-2 control-label">Địa chỉ liên hệ </label>
                                         <div class="col-sm-6">
                                             <textarea class="form-control" name="contact_address" style="height:140px;"><?php echo $contact_address; ?></textarea>
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label for="" class="col-sm-2 control-label">Contact Email </label>
+                                        <label for="" class="col-sm-2 control-label">Email liên hệ </label>
                                         <div class="col-sm-6">
                                             <input type="text" class="form-control" name="contact_email" value="<?php echo $contact_email; ?>">
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label for="" class="col-sm-2 control-label">Contact Phone Number </label>
+                                        <label for="" class="col-sm-2 control-label">Số điện thoại liên hệ </label>
                                         <div class="col-sm-6">
                                             <input type="text" class="form-control" name="contact_phone" value="<?php echo $contact_phone; ?>">
                                         </div>
@@ -921,7 +912,7 @@ foreach ($result as $row) {
                                         </div>
                                     </div>-->
                                     <div class="form-group">
-                                        <label for="" class="col-sm-2 control-label">Contact Map iFrame </label>
+                                        <label for="" class="col-sm-2 control-label">Địa chỉ cửa hàng </label>
                                         <div class="col-sm-9">
                                             <textarea class="form-control" name="contact_map_iframe" style="height:200px;"><?php echo $contact_map_iframe; ?></textarea>
                                         </div>
@@ -929,7 +920,7 @@ foreach ($result as $row) {
                                     <div class="form-group">
                                         <label for="" class="col-sm-2 control-label"></label>
                                         <div class="col-sm-6">
-                                            <button type="submit" class="btn btn-success pull-left" name="form3">Update</button>
+                                            <button type="submit" class="btn btn-success pull-left" name="form3">Cập nhập</button>
                                         </div>
                                     </div>
                                 </div>
@@ -945,25 +936,25 @@ foreach ($result as $row) {
                             <div class="box box-info">
                                 <div class="box-body">
                                     <div class="form-group">
-                                        <label for="" class="col-sm-3 control-label">Contact Email Address</label>
+                                        <label for="" class="col-sm-3 control-label">Địa chỉ email liên hệ</label>
                                         <div class="col-sm-4">
                                             <input type="text" class="form-control" name="receive_email" value="<?php echo $receive_email; ?>">
                                         </div>
                                     </div>                                  
                                     <div class="form-group">
-                                        <label for="" class="col-sm-3 control-label">Contact Email Subject</label>
+                                        <label for="" class="col-sm-3 control-label">Chủ sở hữu</label>
                                         <div class="col-sm-8">
                                             <input type="text" class="form-control" name="receive_email_subject" value="<?php echo $receive_email_subject; ?>">
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label for="" class="col-sm-3 control-label">Contact Email Thank you message</label>
+                                        <label for="" class="col-sm-3 control-label">Trả lời nhanh</label>
                                         <div class="col-sm-8">
                                             <textarea class="form-control" name="receive_email_thank_you_message"><?php echo $receive_email_thank_you_message; ?></textarea>
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label for="" class="col-sm-3 control-label">Forget password Message</label>
+                                        <label for="" class="col-sm-3 control-label">Tin nhắn quên mật khẩu</label>
                                         <div class="col-sm-8">
                                             <textarea class="form-control" name="forget_password_message"><?php echo $forget_password_message; ?></textarea>
                                         </div>
@@ -971,7 +962,7 @@ foreach ($result as $row) {
                                     <div class="form-group">
                                         <label for="" class="col-sm-3 control-label"></label>
                                         <div class="col-sm-5">
-                                            <button type="submit" class="btn btn-success pull-left" name="form4">Update</button>
+                                            <button type="submit" class="btn btn-success pull-left" name="form4">Cập nhập</button>
                                         </div>
                                     </div>
                                 </div>
@@ -990,7 +981,7 @@ foreach ($result as $row) {
                                 <div class="box box-info">
                                     <div class="box-body">
                                         <div class="form-group">
-                                            <label for="" class="col-sm-2 control-label">PayPal - Business Email </label>
+                                            <label for="" class="col-sm-2 control-label">Email PayPal</label>
                                             <div class="col-sm-5">
                                                 <input type="text" name="paypal_email" class="form-control" value="<?php echo $paypal_email; ?>">
                                             </div>
@@ -1008,7 +999,7 @@ foreach ($result as $row) {
                                             </div>
                                         </div> -->
                                         <div class="form-group">
-                                            <label for="" class="col-sm-2 control-label">Bank Information </label>
+                                            <label for="" class="col-sm-2 control-label">Thông tin ngân hàng </label>
                                             <div class="col-sm-5">
                                                 <textarea name="bank_detail" class="form-control" cols="30" rows="10"><?php echo $bank_detail; ?></textarea>
                                             </div>

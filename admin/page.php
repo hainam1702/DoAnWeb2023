@@ -172,7 +172,7 @@ if(isset($_POST['form_contact'])) {
 
 <section class="content-header">
     <div class="content-header-left">
-        <h1>Cài đặt trang</h1>
+        <h1>Chỉnh sửa trang</h1>
     </div>
 </section>
 
@@ -185,18 +185,13 @@ foreach ($result as $row) {
     $about_content = $row['about_content'];
     $about_banner = $row['about_banner'];
     $about_meta_title = $row['about_meta_title'];
-    $about_meta_keyword = $row['about_meta_keyword'];
-    $about_meta_description = $row['about_meta_description'];
     $faq_title = $row['faq_title'];
     $faq_banner = $row['faq_banner'];
     $faq_meta_title = $row['faq_meta_title'];
-    $faq_meta_keyword = $row['faq_meta_keyword'];
-    $faq_meta_description = $row['faq_meta_description'];
     $contact_title = $row['contact_title'];
     $contact_banner = $row['contact_banner'];
     $contact_meta_title = $row['contact_meta_title'];
-    $contact_meta_keyword = $row['contact_meta_keyword'];
-    $contact_meta_description = $row['contact_meta_description'];
+
 
 }
 ?>
@@ -231,9 +226,9 @@ foreach ($result as $row) {
                             
                 <div class="nav-tabs-custom">
                     <ul class="nav nav-tabs">
-                        <li class="active"><a href="#tab_1" data-toggle="tab">About Us</a></li>
+                        <li class="active"><a href="#tab_1" data-toggle="tab">Giới thiệu</a></li>
                         <li><a href="#tab_2" data-toggle="tab">FAQ</a></li>
-                        <li><a href="#tab_4" data-toggle="tab">Contact</a></li>
+                        <li><a href="#tab_4" data-toggle="tab">Liên hệ</a></li>
 
                     </ul>
 
@@ -245,25 +240,25 @@ foreach ($result as $row) {
                             <div class="box box-info">
                                 <div class="box-body">
                                     <div class="form-group">
-                                        <label for="" class="col-sm-3 control-label">Page Title * </label>
+                                        <label for="" class="col-sm-3 control-label">Tiêu đề trang * </label>
                                         <div class="col-sm-5">
                                             <input class="form-control" type="text" name="about_title" value="<?php echo $about_title; ?>">
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label for="" class="col-sm-3 control-label">Page Content * </label>
+                                        <label for="" class="col-sm-3 control-label">Nội dung trang * </label>
                                         <div class="col-sm-8">
                                             <textarea class="form-control" name="about_content" id="editor1"><?php echo $about_content; ?></textarea>
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label for="" class="col-sm-3 control-label">Existing Banner Photo</label>
+                                        <label for="" class="col-sm-3 control-label">Ảnh hiện tại</label>
                                         <div class="col-sm-6" style="padding-top:6px;">
                                             <img src="../assets/uploads/<?php echo $about_banner; ?>" class="existing-photo" style="height:80px;">
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label for="" class="col-sm-3 control-label">New Banner Photo</label>
+                                        <label for="" class="col-sm-3 control-label">Ảnh mới</label>
                                         <div class="col-sm-6" style="padding-top:6px;">
                                             <input type="file" name="about_banner">
                                         </div>
@@ -274,22 +269,11 @@ foreach ($result as $row) {
                                             <input class="form-control" type="text" name="about_meta_title" value="<?php echo $about_meta_title; ?>">
                                         </div>
                                     </div>             
-                                    <div class="form-group">
-                                        <label for="" class="col-sm-3 control-label">Meta Keyword </label>
-                                        <div class="col-sm-8">
-                                            <textarea class="form-control" name="about_meta_keyword" style="height:100px;"><?php echo $about_meta_keyword; ?></textarea>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="" class="col-sm-3 control-label">Meta Description </label>
-                                        <div class="col-sm-8">
-                                            <textarea class="form-control" name="about_meta_description" style="height:100px;"><?php echo $about_meta_description; ?></textarea>
-                                        </div>
-                                    </div>                                    
+                                    
                                     <div class="form-group">
                                         <label for="" class="col-sm-3 control-label"></label>
                                         <div class="col-sm-6">
-                                            <button type="submit" class="btn btn-success pull-left" name="form_about">Update</button>
+                                            <button type="submit" class="btn btn-success pull-left" name="form_about">Cập nhật</button>
                                         </div>
                                     </div>
                                 </div>
@@ -304,19 +288,19 @@ foreach ($result as $row) {
                             <div class="box box-info">
                                 <div class="box-body">
                                     <div class="form-group">
-                                        <label for="" class="col-sm-3 control-label">Page Title * </label>
+                                        <label for="" class="col-sm-3 control-label">Tiêu đề trang * </label>
                                         <div class="col-sm-5">
                                             <input class="form-control" type="text" name="faq_title" value="<?php echo $faq_title; ?>">
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label for="" class="col-sm-3 control-label">Existing Banner Photo</label>
+                                        <label for="" class="col-sm-3 control-label">Ảnh hiện tại</label>
                                         <div class="col-sm-6" style="padding-top:6px;">
                                             <img src="../assets/uploads/<?php echo $faq_banner; ?>" class="existing-photo" style="height:80px;">
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label for="" class="col-sm-3 control-label">New Banner Photo</label>
+                                        <label for="" class="col-sm-3 control-label">Ảnh mới</label>
                                         <div class="col-sm-6" style="padding-top:6px;">
                                             <input type="file" name="faq_banner">
                                         </div>
@@ -327,22 +311,11 @@ foreach ($result as $row) {
                                             <input class="form-control" type="text" name="faq_meta_title" value="<?php echo $faq_meta_title; ?>">
                                         </div>
                                     </div>             
-                                    <div class="form-group">
-                                        <label for="" class="col-sm-3 control-label">Meta Keyword </label>
-                                        <div class="col-sm-8">
-                                            <textarea class="form-control" name="faq_meta_keyword" style="height:100px;"><?php echo $faq_meta_keyword; ?></textarea>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="" class="col-sm-3 control-label">Meta Description </label>
-                                        <div class="col-sm-8">
-                                            <textarea class="form-control" name="faq_meta_description" style="height:100px;"><?php echo $faq_meta_description; ?></textarea>
-                                        </div>
-                                    </div>                                    
+                                                                   
                                     <div class="form-group">
                                         <label for="" class="col-sm-3 control-label"></label>
                                         <div class="col-sm-6">
-                                            <button type="submit" class="btn btn-success pull-left" name="form_faq">Update</button>
+                                            <button type="submit" class="btn btn-success pull-left" name="form_faq">Cập nhật</button>
                                         </div>
                                     </div>
                                 </div>
@@ -357,19 +330,19 @@ foreach ($result as $row) {
                             <div class="box box-info">
                                 <div class="box-body">
                                     <div class="form-group">
-                                        <label for="" class="col-sm-3 control-label">Page Title * </label>
+                                        <label for="" class="col-sm-3 control-label">Tiêu đề trang * </label>
                                         <div class="col-sm-5">
                                             <input class="form-control" type="text" name="contact_title" value="<?php echo $contact_title; ?>">
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label for="" class="col-sm-3 control-label">Existing Banner Photo</label>
+                                        <label for="" class="col-sm-3 control-label">Ảnh hiện tại</label>
                                         <div class="col-sm-6" style="padding-top:6px;">
                                             <img src="../assets/uploads/<?php echo $contact_banner; ?>" class="existing-photo" style="height:80px;">
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label for="" class="col-sm-3 control-label">New Banner Photo</label>
+                                        <label for="" class="col-sm-3 control-label">Ảnh mới</label>
                                         <div class="col-sm-6" style="padding-top:6px;">
                                             <input type="file" name="contact_banner">
                                         </div>
@@ -380,22 +353,11 @@ foreach ($result as $row) {
                                             <input class="form-control" type="text" name="contact_meta_title" value="<?php echo $contact_meta_title; ?>">
                                         </div>
                                     </div>             
-                                    <div class="form-group">
-                                        <label for="" class="col-sm-3 control-label">Meta Keyword </label>
-                                        <div class="col-sm-8">
-                                            <textarea class="form-control" name="contact_meta_keyword" style="height:100px;"><?php echo $contact_meta_keyword; ?></textarea>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="" class="col-sm-3 control-label">Meta Description </label>
-                                        <div class="col-sm-8">
-                                            <textarea class="form-control" name="contact_meta_description" style="height:100px;"><?php echo $contact_meta_description; ?></textarea>
-                                        </div>
-                                    </div>                                    
+                                                    
                                     <div class="form-group">
                                         <label for="" class="col-sm-3 control-label"></label>
                                         <div class="col-sm-6">
-                                            <button type="submit" class="btn btn-success pull-left" name="form_contact">Update</button>
+                                            <button type="submit" class="btn btn-success pull-left" name="form_contact">Cập nhật</button>
                                         </div>
                                     </div>
                                 </div>

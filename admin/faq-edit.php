@@ -47,7 +47,7 @@ if(!isset($_REQUEST['id'])) {
 		<h1>Edit FAQ</h1>
 	</div>
 	<div class="content-header-right">
-		<a href="faq.php" class="btn btn-primary btn-sm">View All</a>
+		<a href="faq.php" class="btn btn-primary btn-sm">Xem tất cả</a>
 	</div>
 </section>
 
@@ -84,13 +84,13 @@ foreach ($result as $row) {
 				<div class="box box-info">
 					<div class="box-body">
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Title <span>*</span></label>
+							<label for="" class="col-sm-2 control-label">Tiêu đề <span>*</span></label>
 							<div class="col-sm-6">
 								<input type="text" autocomplete="off" class="form-control" name="faq_title" value="<?php echo $faq_title; ?>">
 							</div>
 						</div>
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Content <span>*</span></label>
+							<label for="" class="col-sm-2 control-label">Nội dung <span>*</span></label>
 							<div class="col-sm-9">
 								<textarea class="form-control" name="faq_content" id="editor1" style="height:140px;"><?php echo $faq_content; ?></textarea>
 							</div>
@@ -98,7 +98,7 @@ foreach ($result as $row) {
 						<div class="form-group">
 							<label for="" class="col-sm-2 control-label"></label>
 							<div class="col-sm-6">
-								<button type="submit" class="btn btn-success pull-left" name="form1">Submit</button>
+								<button type="submit" class="btn btn-success pull-left" name="form1">Cập nhập</button>
 							</div>
 						</div>
 					</div>

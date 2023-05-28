@@ -5,7 +5,7 @@
 		<h1>Danh mục lớn</h1>
 	</div>
 	<div class="content-header-right">
-		<a href="top-category-add.php" class="btn btn-primary btn-sm">Add New</a>
+		<a href="top-category-add.php" class="btn btn-primary btn-sm">Thêm mới</a>
 	</div>
 </section>
 
@@ -23,9 +23,9 @@
 			<thead>
 			    <tr>
 			        <th>#</th>
-			        <th>Top Category Name</th>
-                    <th>Show on Menu?</th>
-			        <th>Action</th>
+			        <th>Danh mục lớn</th>
+                    <th>Hiển thị trên menu?</th>
+			        <th>Tùy chọn</th>
 			    </tr>
 			</thead>
             <tbody>
@@ -50,8 +50,8 @@
                             ?>
                         </td>
 	                    <td>
-	                        <a href="top-category-edit.php?id=<?php echo $row['tcat_id']; ?>" class="btn btn-primary btn-xs">Edit</a>
-	                        <a href="#" class="btn btn-danger btn-xs" data-href="top-category-delete.php?id=<?php echo $row['tcat_id']; ?>" data-toggle="modal" data-target="#confirm-delete">Delete</a>
+	                        <a href="top-category-edit.php?id=<?php echo $row['tcat_id']; ?>" class="btn btn-primary btn-xs">Sửa</a>
+	                        <a href="#" class="btn btn-danger btn-xs" data-href="top-category-delete.php?id=<?php echo $row['tcat_id']; ?>" data-toggle="modal" data-target="#confirm-delete">Xóa</a>
 	                    </td>
 	                </tr>
             		<?php
@@ -71,11 +71,11 @@
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h4 class="modal-title" id="myModalLabel">Delete Confirmation</h4>
+                <h4 class="modal-title" id="myModalLabel">Xóa mục này ?</h4>
             </div>
             <div class="modal-body">
-                <p>Are you sure want to delete this item?</p>
-                <p style="color:red;">Be careful! All products, mid level categories and end level categories under this top lelvel category will be deleted from all the tables like order table, payment table, size table, color table, rating table etc.</p>
+                <p>Bạn có chắc chắn muốn xóa mục này?</p>
+                <p style="color:red;">Hãy cẩn thận! Tất cả các sản phẩm, danh mục cấp trung bình và danh mục cấp cuối trong danh mục cấp cao nhất này sẽ bị xóa khỏi tất cả các bảng như bảng đặt hàng, bảng thanh toán, bảng kích thước, bảng màu, bảng đánh giá, v.v..</p>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>

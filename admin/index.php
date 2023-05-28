@@ -1,6 +1,7 @@
 <?php require_once('header.php'); ?>
 
 <section class="content-header">
+<div class="content-header-left">
 	<h1>Bảng điều khiển</h1>
 </section>
 

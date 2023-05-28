@@ -70,10 +70,10 @@ if(!isset($_SESSION['user'])) {
 							<ul class="dropdown-menu">
 								<li class="user-footer">
 									<div>
-										<a href="profile-edit.php" class="btn btn-default btn-flat">Edit Profile</a>
+										<a href="profile-edit.php" class="btn btn-default btn-flat">Sửa thông tin cá nhân</a>
 									</div>
 									<div>
-										<a href="logout.php" class="btn btn-default btn-flat">Log out</a>
+										<a href="logout.php" class="btn btn-default btn-flat">Đăng xuất</a>
 									</div>
 								</li>
 							</ul>

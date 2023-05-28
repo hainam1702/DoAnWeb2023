@@ -2,10 +2,10 @@
 
 <section class="content-header">
 	<div class="content-header-left">
-		<h1>View Photos</h1>
+		<h1>Xem ảnh</h1>
 	</div>
 	<div class="content-header-right">
-		<a href="photo-add.php" class="btn btn-primary btn-sm">Add New</a>
+		<a href="photo-add.php" class="btn btn-primary btn-sm">Thêm mới</a>
 	</div>
 </section>
 
@@ -65,10 +65,10 @@
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h4 class="modal-title" id="myModalLabel">Delete Confirmation</h4>
+                <h4 class="modal-title" id="myModalLabel">Xóa mục này ?</h4>
             </div>
             <div class="modal-body">
-                Are you sure want to delete this item?
+                Bạn có chắc chắn muốn xóa mục này?
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>

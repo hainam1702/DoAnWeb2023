@@ -58,7 +58,7 @@ if(!isset($_REQUEST['id'])) {
 		<h1>Edit Country</h1>
 	</div>
 	<div class="content-header-right">
-		<a href="country.php" class="btn btn-primary btn-sm">View All</a>
+		<a href="country.php" class="btn btn-primary btn-sm">Xem tất cả</a>
 	</div>
 </section>
 
@@ -96,7 +96,7 @@ foreach ($result as $row) {
 
             <div class="box-body">
                 <div class="form-group">
-                    <label for="" class="col-sm-2 control-label">Country Name <span>*</span></label>
+                    <label for="" class="col-sm-2 control-label">Tên nước <span>*</span></label>
                     <div class="col-sm-4">
                         <input type="text" class="form-control" name="country_name" value="<?php echo $country_name; ?>">
                     </div>
@@ -104,7 +104,7 @@ foreach ($result as $row) {
                 <div class="form-group">
                 	<label for="" class="col-sm-2 control-label"></label>
                     <div class="col-sm-6">
-                      <button type="submit" class="btn btn-success pull-left" name="form1">Update</button>
+                      <button type="submit" class="btn btn-success pull-left" name="form1">Cập nhập</button>
                     </div>
                 </div>
 
@@ -126,14 +126,14 @@ foreach ($result as $row) {
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h4 class="modal-title" id="myModalLabel">Delete Confirmation</h4>
+                <h4 class="modal-title" id="myModalLabel">Bạn muốn xóa ?</h4>
             </div>
             <div class="modal-body">
-                Are you sure want to delete this item?
+			Bạn có chắc chắn muốn xóa mục này?
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-                <a class="btn btn-danger btn-ok">Delete</a>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Thoát</button>
+                <a class="btn btn-danger btn-ok">Xóa</a>
             </div>
         </div>
     </div>

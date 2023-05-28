@@ -35,7 +35,7 @@ if(isset($_POST['form1'])) {
 		<h1>Add Top Level Category</h1>
 	</div>
 	<div class="content-header-right">
-		<a href="top-category.php" class="btn btn-primary btn-sm">View All</a>
+		<a href="top-category.php" class="btn btn-primary btn-sm">Xem tất cả</a>
 	</div>
 </section>
 
@@ -66,13 +66,13 @@ if(isset($_POST['form1'])) {
 				<div class="box box-info">
 					<div class="box-body">
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Top Category Name <span>*</span></label>
+							<label for="" class="col-sm-2 control-label">Danh mục lớn <span>*</span></label>
 							<div class="col-sm-4">
 								<input type="text" class="form-control" name="tcat_name">
 							</div>
 						</div>
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Show on Menu? <span>*</span></label>
+							<label for="" class="col-sm-2 control-label">Hiển thị trên menu? <span>*</span></label>
 							<div class="col-sm-4">
 								<select name="show_on_menu" class="form-control" style="width:auto;">
 									<option value="0">No</option>
@@ -83,7 +83,7 @@ if(isset($_POST['form1'])) {
 						<div class="form-group">
 							<label for="" class="col-sm-2 control-label"></label>
 							<div class="col-sm-6">
-								<button type="submit" class="btn btn-success pull-left" name="form1">Submit</button>
+								<button type="submit" class="btn btn-success pull-left" name="form1">Cập nhập</button>
 							</div>
 						</div>
 					</div>
